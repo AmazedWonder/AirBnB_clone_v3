@@ -74,7 +74,7 @@ class DBStorage:
     def get(self, cls, id):
         """
         Retrieve an element with a specific ID from a collection,
-        else return None   
+        else return None
         """
         obj = None
         if cls is not None and issubclass(cls, BaseModel):
