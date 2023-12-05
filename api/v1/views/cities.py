@@ -85,4 +85,5 @@ def update_city(city_id):
         if key not in ignore_keys:
             setattr(get_id, key, value)
     get_id.save()
+
     return (jsonify(get_id.to_dict()), 200)
